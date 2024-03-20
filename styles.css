@@ -1,0 +1,101 @@
+	@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Playfair+Display+SC:wght@900&display=swap');
+  				:root{
+  				   --LightCyan: hsl(193, 38%, 86%);
+          --NeonGreen: hsl(150, 100%, 66%);
+          --GrayishBlue: hsl(217, 19%, 38%);
+          --DarkGrayishBlue: hsl(217, 19%, 24%);
+          --DarkBlue: hsl(218, 23%, 16%);
+          --white:#e9fefe;
+          font-size:16px;
+}
+  			*{
+  							margin:0;
+  							padding:0;
+  				}
+    body{
+            display:grid;
+            place-items: center;
+            background-color:var(--DarkBlue);
+            height:100vh;
+            width:100vw;
+         }
+     #container{
+     				  display:grid;
+     	background-color:var(--DarkGrayishBlue);
+     				  height:auto;
+     				  width:350px;
+     				  border-radius:15px;
+     				 place-items: center;
+     				  font-size:1.8rem;
+     				  text-align:center;
+     				  padding:15px;
+     				  box-shadow:5px 10px 15px #222;
+     				  word-spacing:2px;
+     				  margin:20px;
+     				  }
+     		
+      #advice{
+            font-size:1.2rem;
+            color:var(--NeonGreen);
+            margin:20px 0px 10px 0px;
+            font-family:'Playfair', sans-serif;
+            font-weight:600;
+            }
+       #advice-quote{
+       				margin: 20px 25px 30px 25px;
+       				font-size:28px;
+       				font-weight:800;
+       			line-height:1.5;	
+       			 color:var(--white);
+       			font-family:'Playfair', sans-serif;
+       		transition: all .5s;
+       		opacity:0.85;
+       				}
+     	.quotemarks{
+       								font-weight:100;
+       								}
+       	.attribution{
+       								color:var(--white);
+       								margin:50px 0px 10px;
+       								user-select: none;
+       							
+       								}
+      	.attribution a, .diceword{
+       								 color:var(--NeonGreen);
+       								 font-weight:400;
+       								 }
+           
+             #dice{
+             background:var(--NeonGreen);
+             width:70px;
+             height:70px;
+             border-radius:50%;
+             color:black;
+             font-weight:bolder;
+             display:grid;
+             place-items: center;
+             position:relative;
+             top:50px;
+             transition:box-shadow 1s;
+             }
+             #dice:hover{
+             box-shadow:1px 1px 20px 15px hsla(150, 100%, 66%, 0.5);
+             transition:1s;
+             }
+             
+             .roll{
+             animation:roll .5s linear 1;
+             
+             }
+             @keyframes roll{
+             0%{
+                  transform:rotate(0deg);
+                  }
+             100%{
+                   transform:rotate(360deg);
+                   }}
+                   
+            @media(min-width:500px){
+              #container{
+              width:500px;
+              }}
